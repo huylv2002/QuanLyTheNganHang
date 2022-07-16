@@ -32,14 +32,14 @@
             this.tabPage_LAPHOSO = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panelMENU_THONGTINKHACHHANG = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtLayThongTinTG = new System.Windows.Forms.TextBox();
+            this.lblLayThongTinTG = new System.Windows.Forms.Label();
+            this.txtLayThongTinSTV = new System.Windows.Forms.TextBox();
+            this.lblLayThongTinSTV = new System.Windows.Forms.Label();
+            this.cboLayThongTinSPV = new System.Windows.Forms.ComboBox();
+            this.lblLayThongTinSPV = new System.Windows.Forms.Label();
+            this.lblLayThongTin = new System.Windows.Forms.Label();
+            this.txtLayThongTinTNBQ = new System.Windows.Forms.TextBox();
             this.lblSOTAIKHOAN = new System.Windows.Forms.Label();
             this.listBox_DIACHI = new System.Windows.Forms.ListBox();
             this.txtSODU = new System.Windows.Forms.TextBox();
@@ -170,14 +170,14 @@
             // panelMENU_THONGTINKHACHHANG
             // 
             this.panelMENU_THONGTINKHACHHANG.BackColor = System.Drawing.Color.White;
-            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.textBox3);
-            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.label5);
-            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.textBox1);
-            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.label4);
-            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.comboBox2);
-            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.label3);
-            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.label2);
-            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.textBox2);
+            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.txtLayThongTinTG);
+            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.lblLayThongTinTG);
+            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.txtLayThongTinSTV);
+            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.lblLayThongTinSTV);
+            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.cboLayThongTinSPV);
+            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.lblLayThongTinSPV);
+            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.lblLayThongTin);
+            this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.txtLayThongTinTNBQ);
             this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.lblSOTAIKHOAN);
             this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.listBox_DIACHI);
             this.panelMENU_THONGTINKHACHHANG.Controls.Add(this.txtSODU);
@@ -200,76 +200,76 @@
             this.panelMENU_THONGTINKHACHHANG.Size = new System.Drawing.Size(288, 703);
             this.panelMENU_THONGTINKHACHHANG.TabIndex = 2;
             // 
-            // textBox3
+            // txtLayThongTinTG
             // 
-            this.textBox3.Location = new System.Drawing.Point(101, 536);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(182, 22);
-            this.textBox3.TabIndex = 40;
+            this.txtLayThongTinTG.Location = new System.Drawing.Point(101, 536);
+            this.txtLayThongTinTG.Name = "txtLayThongTinTG";
+            this.txtLayThongTinTG.Size = new System.Drawing.Size(182, 22);
+            this.txtLayThongTinTG.TabIndex = 40;
             // 
-            // label5
+            // lblLayThongTinTG
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(18, 543);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 15);
-            this.label5.TabIndex = 39;
-            this.label5.Text = "Thời gian";
+            this.lblLayThongTinTG.AutoSize = true;
+            this.lblLayThongTinTG.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLayThongTinTG.Location = new System.Drawing.Point(18, 543);
+            this.lblLayThongTinTG.Name = "lblLayThongTinTG";
+            this.lblLayThongTinTG.Size = new System.Drawing.Size(60, 15);
+            this.lblLayThongTinTG.TabIndex = 39;
+            this.lblLayThongTinTG.Text = "Thời gian";
             // 
-            // textBox1
+            // txtLayThongTinSTV
             // 
-            this.textBox1.Location = new System.Drawing.Point(102, 495);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 22);
-            this.textBox1.TabIndex = 38;
+            this.txtLayThongTinSTV.Location = new System.Drawing.Point(102, 495);
+            this.txtLayThongTinSTV.Name = "txtLayThongTinSTV";
+            this.txtLayThongTinSTV.Size = new System.Drawing.Size(182, 22);
+            this.txtLayThongTinSTV.TabIndex = 38;
             // 
-            // label4
+            // lblLayThongTinSTV
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(13, 502);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 15);
-            this.label4.TabIndex = 37;
-            this.label4.Text = "Số tiền vay";
+            this.lblLayThongTinSTV.AutoSize = true;
+            this.lblLayThongTinSTV.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLayThongTinSTV.Location = new System.Drawing.Point(13, 502);
+            this.lblLayThongTinSTV.Name = "lblLayThongTinSTV";
+            this.lblLayThongTinSTV.Size = new System.Drawing.Size(65, 15);
+            this.lblLayThongTinSTV.TabIndex = 37;
+            this.lblLayThongTinSTV.Text = "Số tiền vay";
             // 
-            // comboBox2
+            // cboLayThongTinSPV
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(102, 450);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(186, 23);
-            this.comboBox2.TabIndex = 36;
+            this.cboLayThongTinSPV.FormattingEnabled = true;
+            this.cboLayThongTinSPV.Location = new System.Drawing.Point(102, 450);
+            this.cboLayThongTinSPV.Name = "cboLayThongTinSPV";
+            this.cboLayThongTinSPV.Size = new System.Drawing.Size(186, 23);
+            this.cboLayThongTinSPV.TabIndex = 36;
             // 
-            // label3
+            // lblLayThongTinSPV
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 458);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 15);
-            this.label3.TabIndex = 35;
-            this.label3.Text = "Sản phẩm vay";
+            this.lblLayThongTinSPV.AutoSize = true;
+            this.lblLayThongTinSPV.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLayThongTinSPV.Location = new System.Drawing.Point(13, 458);
+            this.lblLayThongTinSPV.Name = "lblLayThongTinSPV";
+            this.lblLayThongTinSPV.Size = new System.Drawing.Size(80, 15);
+            this.lblLayThongTinSPV.TabIndex = 35;
+            this.lblLayThongTinSPV.Text = "Sản phẩm vay";
             // 
-            // label2
+            // lblLayThongTin
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label2.Location = new System.Drawing.Point(98, 408);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 19);
-            this.label2.TabIndex = 34;
-            this.label2.Text = "DỊCH VỤ";
+            this.lblLayThongTin.AutoSize = true;
+            this.lblLayThongTin.BackColor = System.Drawing.Color.Transparent;
+            this.lblLayThongTin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLayThongTin.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lblLayThongTin.Location = new System.Drawing.Point(98, 408);
+            this.lblLayThongTin.Name = "lblLayThongTin";
+            this.lblLayThongTin.Size = new System.Drawing.Size(76, 19);
+            this.lblLayThongTin.TabIndex = 34;
+            this.lblLayThongTin.Text = "DỊCH VỤ";
             // 
-            // textBox2
+            // txtLayThongTinTNBQ
             // 
-            this.textBox2.Location = new System.Drawing.Point(103, 362);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(182, 22);
-            this.textBox2.TabIndex = 24;
+            this.txtLayThongTinTNBQ.Location = new System.Drawing.Point(103, 362);
+            this.txtLayThongTinTNBQ.Name = "txtLayThongTinTNBQ";
+            this.txtLayThongTinTNBQ.Size = new System.Drawing.Size(182, 22);
+            this.txtLayThongTinTNBQ.TabIndex = 24;
             // 
             // lblSOTAIKHOAN
             // 
@@ -1056,7 +1056,7 @@
         private System.Windows.Forms.TabPage tabPage_QUANLYHOSADALAP;
         private System.Windows.Forms.TabPage tabPage_TIENTRINH;
         private System.Windows.Forms.Panel panelMENU_THONGTINKHACHHANG;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtLayThongTinTNBQ;
         private System.Windows.Forms.Label lblSOTAIKHOAN;
         private System.Windows.Forms.ListBox listBox_DIACHI;
         private System.Windows.Forms.TextBox txtSODU;
@@ -1072,13 +1072,13 @@
         private System.Windows.Forms.Label lblSODIENTHOAI;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblTHONGTIN_GIAODICH;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblLayThongTin;
+        private System.Windows.Forms.Label lblLayThongTinSPV;
+        private System.Windows.Forms.ComboBox cboLayThongTinSPV;
+        private System.Windows.Forms.TextBox txtLayThongTinSTV;
+        private System.Windows.Forms.Label lblLayThongTinSTV;
+        private System.Windows.Forms.TextBox txtLayThongTinTG;
+        private System.Windows.Forms.Label lblLayThongTinTG;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label6;

@@ -34,15 +34,15 @@ namespace GiaoDien
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblLoaiTheDK = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblMatSau = new System.Windows.Forms.Label();
+            this.lblMatTruoc = new System.Windows.Forms.Label();
+            this.picMatSau = new System.Windows.Forms.PictureBox();
+            this.picMatTruoc = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblQuanHuyen = new System.Windows.Forms.Label();
             this.lblTinhThanhPho = new System.Windows.Forms.Label();
@@ -61,8 +61,8 @@ namespace GiaoDien
             this.txtSoCMND = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblNgaycap = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSDT = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
             this.txtHovaten = new System.Windows.Forms.TextBox();
             this.lblSoCMND = new System.Windows.Forms.Label();
             this.lblHovaTen = new System.Windows.Forms.Label();
@@ -76,8 +76,8 @@ namespace GiaoDien
             this.txtPhuongXa1 = new System.Windows.Forms.TextBox();
             this.txtTinhThanhPho1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLamMoi = new System.Windows.Forms.Button();
+            this.btnThe = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -101,8 +101,8 @@ namespace GiaoDien
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMatSau)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMatTruoc)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -153,15 +153,15 @@ namespace GiaoDien
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.BackColor = System.Drawing.SystemColors.Window;
             this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.lblLoaiTheDK);
             this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.lblMatSau);
+            this.groupBox1.Controls.Add(this.lblMatTruoc);
+            this.groupBox1.Controls.Add(this.picMatSau);
+            this.groupBox1.Controls.Add(this.picMatTruoc);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.rdoNu);
             this.groupBox1.Controls.Add(this.txtNoicap);
@@ -174,8 +174,8 @@ namespace GiaoDien
             this.groupBox1.Controls.Add(this.txtSoCMND);
             this.groupBox1.Controls.Add(this.txtEmail);
             this.groupBox1.Controls.Add(this.lblNgaycap);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblSDT);
+            this.groupBox1.Controls.Add(this.lblEmail);
             this.groupBox1.Controls.Add(this.txtHovaten);
             this.groupBox1.Controls.Add(this.lblSoCMND);
             this.groupBox1.Controls.Add(this.lblHovaTen);
@@ -198,16 +198,16 @@ namespace GiaoDien
             this.comboBox1.Size = new System.Drawing.Size(182, 22);
             this.comboBox1.TabIndex = 40;
             // 
-            // label11
+            // lblLoaiTheDK
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(27, 468);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(78, 17);
-            this.label11.TabIndex = 39;
-            this.label11.Text = "Loại thẻ ĐK";
+            this.lblLoaiTheDK.AutoSize = true;
+            this.lblLoaiTheDK.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoaiTheDK.Location = new System.Drawing.Point(27, 468);
+            this.lblLoaiTheDK.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLoaiTheDK.Name = "lblLoaiTheDK";
+            this.lblLoaiTheDK.Size = new System.Drawing.Size(78, 17);
+            this.lblLoaiTheDK.TabIndex = 39;
+            this.lblLoaiTheDK.Text = "Loại thẻ ĐK";
             // 
             // textBox5
             // 
@@ -255,47 +255,47 @@ namespace GiaoDien
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // lblMatSau
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(682, 232);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(142, 17);
-            this.label4.TabIndex = 33;
-            this.label4.Text = "Mắt sau CCCD, CMND";
+            this.lblMatSau.AutoSize = true;
+            this.lblMatSau.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatSau.Location = new System.Drawing.Point(682, 232);
+            this.lblMatSau.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMatSau.Name = "lblMatSau";
+            this.lblMatSau.Size = new System.Drawing.Size(142, 17);
+            this.lblMatSau.TabIndex = 33;
+            this.lblMatSau.Text = "Mặt sau CCCD, CMND";
             // 
-            // label3
+            // lblMatTruoc
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(677, 21);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(155, 17);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "Mắt trước CCCD, CMND";
+            this.lblMatTruoc.AutoSize = true;
+            this.lblMatTruoc.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMatTruoc.Location = new System.Drawing.Point(677, 21);
+            this.lblMatTruoc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMatTruoc.Name = "lblMatTruoc";
+            this.lblMatTruoc.Size = new System.Drawing.Size(155, 17);
+            this.lblMatTruoc.TabIndex = 32;
+            this.lblMatTruoc.Text = "Mặt trước CCCD, CMND";
             // 
-            // pictureBox2
+            // picMatSau
             // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox2.Location = new System.Drawing.Point(680, 253);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(308, 180);
-            this.pictureBox2.TabIndex = 31;
-            this.pictureBox2.TabStop = false;
+            this.picMatSau.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.picMatSau.Location = new System.Drawing.Point(680, 253);
+            this.picMatSau.Margin = new System.Windows.Forms.Padding(2);
+            this.picMatSau.Name = "picMatSau";
+            this.picMatSau.Size = new System.Drawing.Size(308, 180);
+            this.picMatSau.TabIndex = 31;
+            this.picMatSau.TabStop = false;
             // 
-            // pictureBox1
+            // picMatTruoc
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox1.Location = new System.Drawing.Point(680, 41);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(308, 180);
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
+            this.picMatTruoc.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.picMatTruoc.Location = new System.Drawing.Point(680, 41);
+            this.picMatTruoc.Margin = new System.Windows.Forms.Padding(2);
+            this.picMatTruoc.Name = "picMatTruoc";
+            this.picMatTruoc.Size = new System.Drawing.Size(308, 180);
+            this.picMatTruoc.TabIndex = 30;
+            this.picMatTruoc.TabStop = false;
             // 
             // groupBox2
             // 
@@ -489,27 +489,27 @@ namespace GiaoDien
             this.lblNgaycap.TabIndex = 10;
             this.lblNgaycap.Text = "Ngày cấp";
             // 
-            // label2
+            // lblSDT
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(48, 84);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(34, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "SĐT";
+            this.lblSDT.AutoSize = true;
+            this.lblSDT.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSDT.Location = new System.Drawing.Point(48, 84);
+            this.lblSDT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSDT.Name = "lblSDT";
+            this.lblSDT.Size = new System.Drawing.Size(34, 17);
+            this.lblSDT.TabIndex = 3;
+            this.lblSDT.Text = "SĐT";
             // 
-            // label1
+            // lblEmail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(46, 54);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 17);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Email";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(46, 54);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(39, 17);
+            this.lblEmail.TabIndex = 2;
+            this.lblEmail.Text = "Email";
             // 
             // txtHovaten
             // 
@@ -645,8 +645,8 @@ namespace GiaoDien
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnLamMoi);
+            this.panel1.Controls.Add(this.btnThe);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(2, 549);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
@@ -654,33 +654,33 @@ namespace GiaoDien
             this.panel1.Size = new System.Drawing.Size(1274, 59);
             this.panel1.TabIndex = 4;
             // 
-            // button2
+            // btnLamMoi
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(1102, 11);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 44);
-            this.button2.TabIndex = 35;
-            this.button2.Text = "Làm mới";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLamMoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.Image")));
+            this.btnLamMoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLamMoi.Location = new System.Drawing.Point(1102, 11);
+            this.btnLamMoi.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.Size = new System.Drawing.Size(103, 44);
+            this.btnLamMoi.TabIndex = 35;
+            this.btnLamMoi.Text = "Làm mới";
+            this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLamMoi.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnThe
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(961, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 44);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Mở thẻ";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnThe.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThe.Image = ((System.Drawing.Image)(resources.GetObject("btnThe.Image")));
+            this.btnThe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThe.Location = new System.Drawing.Point(961, 11);
+            this.btnThe.Margin = new System.Windows.Forms.Padding(2);
+            this.btnThe.Name = "btnThe";
+            this.btnThe.Size = new System.Drawing.Size(123, 44);
+            this.btnThe.TabIndex = 34;
+            this.btnThe.Text = "Mở thẻ";
+            this.btnThe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThe.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
@@ -917,8 +917,8 @@ namespace GiaoDien
             this.tabPage1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMatSau)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMatTruoc)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -956,8 +956,8 @@ namespace GiaoDien
         private System.Windows.Forms.RadioButton rdoNam;
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblSDT;
+        private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtHovaten;
         private System.Windows.Forms.Label lblHovaTen;
         private System.Windows.Forms.TextBox txtPhuongXa;
@@ -976,12 +976,12 @@ namespace GiaoDien
         private System.Windows.Forms.TextBox txtNgaycap;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lblMatSau;
+        private System.Windows.Forms.Label lblMatTruoc;
+        private System.Windows.Forms.PictureBox picMatSau;
+        private System.Windows.Forms.PictureBox picMatTruoc;
+        private System.Windows.Forms.Button btnThe;
+        private System.Windows.Forms.Button btnLamMoi;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TabPage tabPage2;
@@ -1003,7 +1003,7 @@ namespace GiaoDien
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblLoaiTheDK;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtSonhaDuongpho;

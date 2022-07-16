@@ -33,17 +33,17 @@ namespace GiaoDien
             this.panelTop = new System.Windows.Forms.Panel();
             this.tabControlOption = new System.Windows.Forms.TabControl();
             this.tabHeThong = new System.Windows.Forms.TabPage();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
+            this.btnTransaction = new System.Windows.Forms.Button();
+            this.btnStaff = new System.Windows.Forms.Button();
+            this.btnCard = new System.Windows.Forms.Button();
             this.listView4 = new System.Windows.Forms.ListView();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
+            this.btnLog = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.btnAddFile = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.btnFilter = new System.Windows.Forms.Button();
+            this.btnExcel = new System.Windows.Forms.Button();
+            this.btnFile = new System.Windows.Forms.Button();
             this.listView3 = new System.Windows.Forms.ListView();
             this.tabQuanlyHS = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
@@ -123,17 +123,17 @@ namespace GiaoDien
             // 
             // tabHeThong
             // 
-            this.tabHeThong.Controls.Add(this.button23);
-            this.tabHeThong.Controls.Add(this.button24);
-            this.tabHeThong.Controls.Add(this.button25);
+            this.tabHeThong.Controls.Add(this.btnTransaction);
+            this.tabHeThong.Controls.Add(this.btnStaff);
+            this.tabHeThong.Controls.Add(this.btnCard);
             this.tabHeThong.Controls.Add(this.listView4);
-            this.tabHeThong.Controls.Add(this.button20);
-            this.tabHeThong.Controls.Add(this.button21);
-            this.tabHeThong.Controls.Add(this.button22);
+            this.tabHeThong.Controls.Add(this.btnLog);
+            this.tabHeThong.Controls.Add(this.btnNew);
+            this.tabHeThong.Controls.Add(this.btnAddFile);
             this.tabHeThong.Controls.Add(this.listView1);
-            this.tabHeThong.Controls.Add(this.button13);
-            this.tabHeThong.Controls.Add(this.button14);
-            this.tabHeThong.Controls.Add(this.button15);
+            this.tabHeThong.Controls.Add(this.btnFilter);
+            this.tabHeThong.Controls.Add(this.btnExcel);
+            this.tabHeThong.Controls.Add(this.btnFile);
             this.tabHeThong.Controls.Add(this.listView3);
             this.tabHeThong.Location = new System.Drawing.Point(4, 22);
             this.tabHeThong.Name = "tabHeThong";
@@ -144,38 +144,38 @@ namespace GiaoDien
             this.tabHeThong.UseVisualStyleBackColor = true;
             this.tabHeThong.Click += new System.EventHandler(this.tabHeThong_Click);
             // 
-            // button23
+            // btnTransaction
             // 
-            this.button23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button23.BackgroundImage")));
-            this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button23.Location = new System.Drawing.Point(567, 19);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(47, 50);
-            this.button23.TabIndex = 31;
-            this.button23.UseVisualStyleBackColor = true;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
+            this.btnTransaction.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTransaction.BackgroundImage")));
+            this.btnTransaction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnTransaction.Location = new System.Drawing.Point(567, 19);
+            this.btnTransaction.Name = "btnTransaction";
+            this.btnTransaction.Size = new System.Drawing.Size(47, 50);
+            this.btnTransaction.TabIndex = 31;
+            this.btnTransaction.UseVisualStyleBackColor = true;
+            this.btnTransaction.Click += new System.EventHandler(this.button23_Click);
             // 
-            // button24
+            // btnStaff
             // 
-            this.button24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button24.BackgroundImage")));
-            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button24.Location = new System.Drawing.Point(504, 19);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(47, 50);
-            this.button24.TabIndex = 30;
-            this.button24.UseVisualStyleBackColor = true;
-            this.button24.Click += new System.EventHandler(this.button24_Click);
+            this.btnStaff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnStaff.BackgroundImage")));
+            this.btnStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnStaff.Location = new System.Drawing.Point(504, 19);
+            this.btnStaff.Name = "btnStaff";
+            this.btnStaff.Size = new System.Drawing.Size(47, 50);
+            this.btnStaff.TabIndex = 30;
+            this.btnStaff.UseVisualStyleBackColor = true;
+            this.btnStaff.Click += new System.EventHandler(this.button24_Click);
             // 
-            // button25
+            // btnCard
             // 
-            this.button25.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button25.BackgroundImage")));
-            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button25.Location = new System.Drawing.Point(439, 20);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(47, 50);
-            this.button25.TabIndex = 29;
-            this.button25.UseVisualStyleBackColor = true;
-            this.button25.Click += new System.EventHandler(this.button25_Click);
+            this.btnCard.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCard.BackgroundImage")));
+            this.btnCard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCard.Location = new System.Drawing.Point(439, 20);
+            this.btnCard.Name = "btnCard";
+            this.btnCard.Size = new System.Drawing.Size(47, 50);
+            this.btnCard.TabIndex = 29;
+            this.btnCard.UseVisualStyleBackColor = true;
+            this.btnCard.Click += new System.EventHandler(this.button25_Click);
             // 
             // listView4
             // 
@@ -187,38 +187,38 @@ namespace GiaoDien
             this.listView4.UseCompatibleStateImageBehavior = false;
             this.listView4.SelectedIndexChanged += new System.EventHandler(this.listView4_SelectedIndexChanged);
             // 
-            // button20
+            // btnLog
             // 
-            this.button20.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button20.BackgroundImage")));
-            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button20.Location = new System.Drawing.Point(356, 18);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(47, 50);
-            this.button20.TabIndex = 27;
-            this.button20.UseVisualStyleBackColor = true;
-            this.button20.Click += new System.EventHandler(this.button20_Click);
+            this.btnLog.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLog.BackgroundImage")));
+            this.btnLog.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnLog.Location = new System.Drawing.Point(356, 18);
+            this.btnLog.Name = "btnLog";
+            this.btnLog.Size = new System.Drawing.Size(47, 50);
+            this.btnLog.TabIndex = 27;
+            this.btnLog.UseVisualStyleBackColor = true;
+            this.btnLog.Click += new System.EventHandler(this.button20_Click);
             // 
-            // button21
+            // btnNew
             // 
-            this.button21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button21.BackgroundImage")));
-            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button21.Location = new System.Drawing.Point(293, 18);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(47, 50);
-            this.button21.TabIndex = 26;
-            this.button21.UseVisualStyleBackColor = true;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
+            this.btnNew.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNew.BackgroundImage")));
+            this.btnNew.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnNew.Location = new System.Drawing.Point(293, 18);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(47, 50);
+            this.btnNew.TabIndex = 26;
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.button21_Click);
             // 
-            // button22
+            // btnAddFile
             // 
-            this.button22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button22.BackgroundImage")));
-            this.button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button22.Location = new System.Drawing.Point(228, 19);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(47, 50);
-            this.button22.TabIndex = 25;
-            this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
+            this.btnAddFile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddFile.BackgroundImage")));
+            this.btnAddFile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAddFile.Location = new System.Drawing.Point(228, 19);
+            this.btnAddFile.Name = "btnAddFile";
+            this.btnAddFile.Size = new System.Drawing.Size(47, 50);
+            this.btnAddFile.TabIndex = 25;
+            this.btnAddFile.UseVisualStyleBackColor = true;
+            this.btnAddFile.Click += new System.EventHandler(this.button22_Click);
             // 
             // listView1
             // 
@@ -230,38 +230,38 @@ namespace GiaoDien
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
-            // button13
+            // btnFilter
             // 
-            this.button13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button13.BackgroundImage")));
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button13.Location = new System.Drawing.Point(145, 18);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(47, 50);
-            this.button13.TabIndex = 23;
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.btnFilter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilter.BackgroundImage")));
+            this.btnFilter.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnFilter.Location = new System.Drawing.Point(145, 18);
+            this.btnFilter.Name = "btnFilter";
+            this.btnFilter.Size = new System.Drawing.Size(47, 50);
+            this.btnFilter.TabIndex = 23;
+            this.btnFilter.UseVisualStyleBackColor = true;
+            this.btnFilter.Click += new System.EventHandler(this.button13_Click);
             // 
-            // button14
+            // btnExcel
             // 
-            this.button14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button14.BackgroundImage")));
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button14.Location = new System.Drawing.Point(82, 18);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(47, 50);
-            this.button14.TabIndex = 22;
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.btnExcel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExcel.BackgroundImage")));
+            this.btnExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExcel.Location = new System.Drawing.Point(82, 18);
+            this.btnExcel.Name = "btnExcel";
+            this.btnExcel.Size = new System.Drawing.Size(47, 50);
+            this.btnExcel.TabIndex = 22;
+            this.btnExcel.UseVisualStyleBackColor = true;
+            this.btnExcel.Click += new System.EventHandler(this.button14_Click);
             // 
-            // button15
+            // btnFile
             // 
-            this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button15.Location = new System.Drawing.Point(17, 19);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(47, 50);
-            this.button15.TabIndex = 21;
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.btnFile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFile.BackgroundImage")));
+            this.btnFile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnFile.Location = new System.Drawing.Point(17, 19);
+            this.btnFile.Name = "btnFile";
+            this.btnFile.Size = new System.Drawing.Size(47, 50);
+            this.btnFile.TabIndex = 21;
+            this.btnFile.UseVisualStyleBackColor = true;
+            this.btnFile.Click += new System.EventHandler(this.button15_Click);
             // 
             // listView3
             // 
@@ -781,9 +781,9 @@ namespace GiaoDien
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button btnFilter;
+        private System.Windows.Forms.Button btnExcel;
+        private System.Windows.Forms.Button btnFile;
         private System.Windows.Forms.ListView listView3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button17;
@@ -800,13 +800,13 @@ namespace GiaoDien
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button btnLog;
+        private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Button btnAddFile;
         private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button25;
+        private System.Windows.Forms.Button btnTransaction;
+        private System.Windows.Forms.Button btnStaff;
+        private System.Windows.Forms.Button btnCard;
         private System.Windows.Forms.ListView listView4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox textBox4;
