@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS.bus_the_khachHang;
+using BUS;
 namespace GiaoDien
 {
     public partial class frmThongTinTaiKhoan : Form
@@ -15,6 +16,15 @@ namespace GiaoDien
         public frmThongTinTaiKhoan()
         {
             InitializeComponent();
+            ShowLen();
+        }
+        public void ShowLen()
+        {
+            txtHoTen.Text = bus_tkNhanVien.Instance.UserLogin()[0].HoTenNhanVien;
+            txtMaTK.Text = bus_tkNhanVien.Instance.UserLogin()[0].Email;
+            txtChucVu.Text = bus_tkNhanVien.Instance.UserLogin()[0].MaPB;
+            txtPhongBan.Text = bus_tkNhanVien.Instance.UserLogin()[0].MaPB;
+            txtDDKD.Text = bus_tkNhanVien.Instance.UserLogin()[0].MaDdKD;
         }
     }
 }

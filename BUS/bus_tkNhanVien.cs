@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAO;
+using DAO.NhanVien;
 using DTO;
 namespace BUS
 {
@@ -22,45 +23,20 @@ namespace BUS
 
         public bool KiemTraTaiKkhoan(string email, string pass)
         {
-            foreach (dto_TkNhanVien item in dao_tkNhanVien.Instance.layTaiKhoan(email, pass))
+            if(dao_Login.Instance.CheckAccount(email, pass))
             {
-                if (dao_tkNhanVien.Instance.layTaiKhoan(email, pass) != null)
-                {
-                    if (email == item.Email && pass == item.MatKhau)
-                    {
-                        return true; break;
-                    }
-                }
-                else
-                {
-                    return false;
-                    break;
-                }
+                return true;
             }
             return false;
         }
 
-        public bool thu(string email, string pass)
+        
+
+        public List<dto_TkNhanVien>UserLogin()
         {
-            if (dao_tkNhanVien.Instance.checkTaiKhoan(email, pass).Equals("No"))
-            {
-                return false;
-            }
-            else if (dao_tkNhanVien.Instance.checkTaiKhoan(email, pass).Equals("NOE"))
-            {
-                return false;
-            }
-            else return true;
+            return dao_Login.Instance.DataUserLogin();
         }
 
-        public List<dto_TkNhanVien>BUSLayTk()
-        {
-            return dao_tkNhanVien.Instance.layUser();
-        }
-
-        public string KiemTraChucVu()
-        {
-            return dao_tkNhanVien.Instance.layUser()[0].Cv;
-        }
+        
     }
 }

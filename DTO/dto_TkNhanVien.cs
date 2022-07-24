@@ -19,34 +19,50 @@ namespace DTO
             set => instance = value;
         }
 
-        private string hoNV;
-        private string tenNV;
-        private string email;
-        private string matKhau;
-        private string cv;
-        private string phongBan;
+        string maNhanVien;
+        string hoTenNhanVien;
+        DateTime ngaySinh;
+        string diaChi;
+        string email;
+        string sCCCD;
+        string maPB;
+        string maCV;
+        string maDdKD;
+        string matkhau;
+        bool gioiTinh;
+        string SDT;
+
+        public string MaNhanVien { get => maNhanVien; set => maNhanVien = value; }
+        public string HoTenNhanVien { get => hoTenNhanVien; set => hoTenNhanVien = value; }
+        public DateTime NgaySinh { get => ngaySinh; set => ngaySinh = value; }
+        public string DiaChi { get => diaChi; set => diaChi = value; }
         public string Email { get => email; set => email = value; }
-        public string MatKhau { get => matKhau; set => matKhau = value; }
-        public string HoNV { get => hoNV; set => hoNV = value; }
-        public string TenNV { get => tenNV; set => tenNV = value; }
-        public string Cv { get => cv; set => cv = value; }
-        public string PhongBan { get => phongBan; set => phongBan = value; }
+        public string SCCCD { get => sCCCD; set => sCCCD = value; }
+        public string MaPB { get => maPB; set => maPB = value; }
+        public string MaCV { get => maCV; set => maCV = value; }
+        public string MaDdKD { get => maDdKD; set => maDdKD = value; }
+        public string Matkhau { get => matkhau; set => matkhau = value; }
+        public bool GioiTinh { get => gioiTinh; set => gioiTinh = value; }
+        public string SDT1 { get => SDT; set => SDT = value; }
 
-        public dto_TkNhanVien() { }
-        public dto_TkNhanVien(string email, string matKhau)
+        public dto_TkNhanVien(string maNhanVien, string hoTenNhanVien, DateTime ngaySinh, string diaChi, string email, string sCCCD, string maPB, string maCV, string maDdKD, string matkhau, bool gioiTinh, string sDT1)
         {
-            this.Email = email;
-            this.MatKhau = matKhau;
-        }
-        public dto_TkNhanVien(string email, string matKhau, string hoNV, string tenNV, string cv, string phongBan) 
-        {
-            this.Email = email;
-            this.MatKhau = matKhau;
-            this.HoNV = hoNV;
-            this.TenNV = tenNV;
-            this.Cv = cv;
-            this.PhongBan = phongBan;
+            MaNhanVien = maNhanVien;
+            HoTenNhanVien = hoTenNhanVien;
+            NgaySinh = ngaySinh;
+            DiaChi = diaChi;
+            Email = email;
+            SCCCD = sCCCD;
+            MaPB = maPB;
+            MaCV = maCV;
+            MaDdKD = maDdKD;
+            Matkhau = matkhau;
+            GioiTinh = gioiTinh;
+            SDT1 = sDT1;
         }
 
+        public dto_TkNhanVien()
+        {
+        }
     }
 }

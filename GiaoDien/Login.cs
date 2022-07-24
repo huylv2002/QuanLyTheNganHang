@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using DTO;
-
+using GiaoDien;
 namespace GiaoDien
 {
     public partial class frmLogin : Form
@@ -30,16 +30,15 @@ namespace GiaoDien
         private void login_Click(object sender, EventArgs e)
         {
             //if(txtUser.Text.)
-            if (bus_tkNhanVien.Instance.thu(txtUser.Text, txtPass.Text) == true)
+            if (bus_tkNhanVien.Instance.KiemTraTaiKkhoan(txtUser.Text.Trim(), txtPass.Text.Trim()))
             {
-                MessageBox.Show("Đăng nhập thành công: " + string.Concat(bus_tkNhanVien.Instance.BUSLayTk()[0].HoNV, " ", bus_tkNhanVien.Instance.BUSLayTk()[0].TenNV));
-                if (bus_tkNhanVien.Instance.KiemTraChucVu().Trim().Equals("NV"))
-                {
-                    frmMain frm = new frmMain();
-                    //frm.
-                    frm.Show();
-                    this.Hide();
-                }
+                   if(MessageBox.Show("Đăng nhập thành công: " + bus_tkNhanVien.Instance.UserLogin()[0].HoTenNhanVien,"Thông báo",MessageBoxButtons.OK) == DialogResult.OK)
+                    {   
+                        frmMain mainPro = new frmMain();
+                        mainPro.Show();
+                        this.Hide();
+                    }
+               
             }
             else
             {
