@@ -22,9 +22,14 @@ namespace GiaoDien
         {
             txtHoTen.Text = bus_tkNhanVien.Instance.UserLogin()[0].HoTenNhanVien;
             txtMaTK.Text = bus_tkNhanVien.Instance.UserLogin()[0].Email;
-            txtChucVu.Text = bus_tkNhanVien.Instance.UserLogin()[0].MaPB;
+            txtChucVu.Text = bus_tkNhanVien.Instance.UserLogin()[0].MaCV;
             txtPhongBan.Text = bus_tkNhanVien.Instance.UserLogin()[0].MaPB;
             txtDDKD.Text = bus_tkNhanVien.Instance.UserLogin()[0].MaDdKD;
+        }
+
+        private void btnDong_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

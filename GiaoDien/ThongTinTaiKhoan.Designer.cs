@@ -49,7 +49,7 @@ namespace GiaoDien
             // 
             this.txtHoTen.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtHoTen.Location = new System.Drawing.Point(245, 65);
-            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(183, 22);
             this.txtHoTen.TabIndex = 0;
@@ -76,7 +76,7 @@ namespace GiaoDien
             this.picAvatar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picAvatar.BackgroundImage")));
             this.picAvatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.picAvatar.Location = new System.Drawing.Point(497, 59);
-            this.picAvatar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picAvatar.Margin = new System.Windows.Forms.Padding(4);
             this.picAvatar.Name = "picAvatar";
             this.picAvatar.Size = new System.Drawing.Size(208, 207);
             this.picAvatar.TabIndex = 2;
@@ -86,7 +86,7 @@ namespace GiaoDien
             // 
             this.txtMaTK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtMaTK.Location = new System.Drawing.Point(245, 110);
-            this.txtMaTK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaTK.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaTK.Name = "txtMaTK";
             this.txtMaTK.Size = new System.Drawing.Size(183, 22);
             this.txtMaTK.TabIndex = 3;
@@ -110,7 +110,7 @@ namespace GiaoDien
             // 
             this.txtChucVu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtChucVu.Location = new System.Drawing.Point(245, 155);
-            this.txtChucVu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtChucVu.Margin = new System.Windows.Forms.Padding(4);
             this.txtChucVu.Name = "txtChucVu";
             this.txtChucVu.Size = new System.Drawing.Size(183, 22);
             this.txtChucVu.TabIndex = 3;
@@ -134,7 +134,7 @@ namespace GiaoDien
             // 
             this.txtPhongBan.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPhongBan.Location = new System.Drawing.Point(245, 199);
-            this.txtPhongBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhongBan.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhongBan.Name = "txtPhongBan";
             this.txtPhongBan.Size = new System.Drawing.Size(183, 22);
             this.txtPhongBan.TabIndex = 3;
@@ -158,7 +158,7 @@ namespace GiaoDien
             // 
             this.txtDDKD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDDKD.Location = new System.Drawing.Point(245, 244);
-            this.txtDDKD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDDKD.Margin = new System.Windows.Forms.Padding(4);
             this.txtDDKD.Name = "txtDDKD";
             this.txtDDKD.Size = new System.Drawing.Size(183, 22);
             this.txtDDKD.TabIndex = 3;
@@ -185,13 +185,14 @@ namespace GiaoDien
             this.btnDong.Image = ((System.Drawing.Image)(resources.GetObject("btnDong.Image")));
             this.btnDong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDong.Location = new System.Drawing.Point(497, 335);
-            this.btnDong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDong.Margin = new System.Windows.Forms.Padding(4);
             this.btnDong.Name = "btnDong";
             this.btnDong.Size = new System.Drawing.Size(168, 55);
             this.btnDong.TabIndex = 5;
             this.btnDong.Text = "Đóng";
             this.btnDong.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDong.UseVisualStyleBackColor = true;
+            this.btnDong.Click += new System.EventHandler(this.btnDong_Click);
             // 
             // frmThongTinTaiKhoan
             // 
@@ -213,7 +214,7 @@ namespace GiaoDien
             this.Controls.Add(this.lblHoTen);
             this.Controls.Add(this.txtHoTen);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmThongTinTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin tài khoản";

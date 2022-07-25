@@ -64,16 +64,12 @@ namespace GiaoDien
             this.báoCáoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.trợGIúpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelWC = new System.Windows.Forms.Panel();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.statusTK = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo)).BeginInit();
             this.panelTopMenu.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            this.panelWC.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -112,6 +108,7 @@ namespace GiaoDien
             this.btnBoPhan.Text = "Bộ Phận";
             this.btnBoPhan.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnBoPhan.UseVisualStyleBackColor = false;
+            this.btnBoPhan.Click += new System.EventHandler(this.btnBoPhan_Click);
             // 
             // btnTimKiem
             // 
@@ -132,6 +129,7 @@ namespace GiaoDien
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // btnCaiDat
             // 
@@ -168,6 +166,7 @@ namespace GiaoDien
             this.btnThongBao.Text = "Thông Báo";
             this.btnThongBao.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnThongBao.UseVisualStyleBackColor = false;
+            this.btnThongBao.Click += new System.EventHandler(this.btnThongBao_Click);
             // 
             // btnThongTinTK
             // 
@@ -444,7 +443,6 @@ namespace GiaoDien
             // panelWC
             // 
             this.panelWC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelWC.Controls.Add(this.statusStrip1);
             this.panelWC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelWC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panelWC.Location = new System.Drawing.Point(147, 54);
@@ -452,24 +450,6 @@ namespace GiaoDien
             this.panelWC.Name = "panelWC";
             this.panelWC.Size = new System.Drawing.Size(1393, 633);
             this.panelWC.TabIndex = 2;
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.statusTK});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 607);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 13, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1393, 26);
-            this.statusStrip1.TabIndex = 0;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // statusTK
-            // 
-            this.statusTK.Name = "statusTK";
-            this.statusTK.Size = new System.Drawing.Size(71, 20);
-            this.statusTK.Text = "Tài khoản";
             // 
             // toolStripStatusLabel1
             // 
@@ -503,10 +483,6 @@ namespace GiaoDien
             this.panelTopMenu.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panelWC.ResumeLayout(false);
-            this.panelWC.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -528,7 +504,6 @@ namespace GiaoDien
         private System.Windows.Forms.Button btnTongQuan;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.Button btnBoPhan;
@@ -542,7 +517,6 @@ namespace GiaoDien
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_tienIch;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_hoTro;
         private System.Windows.Forms.ToolStripMenuItem mởFileHướngDẫnSửDụngToolStripMenuItem;
-        private System.Windows.Forms.ToolStripStatusLabel statusTK;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_quanLyThe;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_lapHoSo;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_QLTT;

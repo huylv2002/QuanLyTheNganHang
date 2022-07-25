@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,7 +31,10 @@ namespace BUS
             return false;
         }
 
-        
+        public DataTable dsNV()
+        {
+            return dao_Login.Instance.DSTKNV();
+        }
 
         public List<dto_TkNhanVien>UserLogin()
         {
