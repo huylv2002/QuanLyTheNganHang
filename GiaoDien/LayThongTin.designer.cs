@@ -30,7 +30,11 @@
         {
             this.tabControl_LAYTHONGTIN = new System.Windows.Forms.TabControl();
             this.tabPage_LAPHOSO = new System.Windows.Forms.TabPage();
+            this.openWord = new System.Windows.Forms.RichTextBox();
             this.panelMENU_THONGTINKHACHHANG = new System.Windows.Forms.Panel();
+            this.btnOpenHoSo = new System.Windows.Forms.Button();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
+            this.btnLapHoSo = new System.Windows.Forms.Button();
             this.txtLayThongTinTG = new System.Windows.Forms.TextBox();
             this.lblLayThongTinTG = new System.Windows.Forms.Label();
             this.txtLayThongTinSTV = new System.Windows.Forms.TextBox();
@@ -112,10 +116,6 @@
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.textBox20 = new System.Windows.Forms.TextBox();
-            this.btnLapHoSo = new System.Windows.Forms.Button();
-            this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.btnOpenHoSo = new System.Windows.Forms.Button();
-            this.openWord = new System.Windows.Forms.RichTextBox();
             this.tabControl_LAYTHONGTIN.SuspendLayout();
             this.tabPage_LAPHOSO.SuspendLayout();
             this.panelMENU_THONGTINKHACHHANG.SuspendLayout();
@@ -141,7 +141,7 @@
             this.tabControl_LAYTHONGTIN.Controls.Add(this.tabPage_TIENTRINH);
             this.tabControl_LAYTHONGTIN.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl_LAYTHONGTIN.Location = new System.Drawing.Point(0, 0);
-            this.tabControl_LAYTHONGTIN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl_LAYTHONGTIN.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl_LAYTHONGTIN.Name = "tabControl_LAYTHONGTIN";
             this.tabControl_LAYTHONGTIN.SelectedIndex = 0;
             this.tabControl_LAYTHONGTIN.Size = new System.Drawing.Size(1273, 905);
@@ -152,13 +152,22 @@
             this.tabPage_LAPHOSO.Controls.Add(this.openWord);
             this.tabPage_LAPHOSO.Controls.Add(this.panelMENU_THONGTINKHACHHANG);
             this.tabPage_LAPHOSO.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_LAPHOSO.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_LAPHOSO.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_LAPHOSO.Name = "tabPage_LAPHOSO";
-            this.tabPage_LAPHOSO.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_LAPHOSO.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage_LAPHOSO.Size = new System.Drawing.Size(1265, 876);
             this.tabPage_LAPHOSO.TabIndex = 0;
             this.tabPage_LAPHOSO.Text = "Lập hồ sơ";
             this.tabPage_LAPHOSO.UseVisualStyleBackColor = true;
+            // 
+            // openWord
+            // 
+            this.openWord.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.openWord.Location = new System.Drawing.Point(4, 4);
+            this.openWord.Name = "openWord";
+            this.openWord.Size = new System.Drawing.Size(890, 868);
+            this.openWord.TabIndex = 3;
+            this.openWord.Text = "";
             // 
             // panelMENU_THONGTINKHACHHANG
             // 
@@ -191,15 +200,44 @@
             this.panelMENU_THONGTINKHACHHANG.Dock = System.Windows.Forms.DockStyle.Right;
             this.panelMENU_THONGTINKHACHHANG.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelMENU_THONGTINKHACHHANG.Location = new System.Drawing.Point(877, 4);
-            this.panelMENU_THONGTINKHACHHANG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelMENU_THONGTINKHACHHANG.Margin = new System.Windows.Forms.Padding(4);
             this.panelMENU_THONGTINKHACHHANG.Name = "panelMENU_THONGTINKHACHHANG";
             this.panelMENU_THONGTINKHACHHANG.Size = new System.Drawing.Size(384, 868);
             this.panelMENU_THONGTINKHACHHANG.TabIndex = 2;
             // 
+            // btnOpenHoSo
+            // 
+            this.btnOpenHoSo.Location = new System.Drawing.Point(126, 783);
+            this.btnOpenHoSo.Name = "btnOpenHoSo";
+            this.btnOpenHoSo.Size = new System.Drawing.Size(176, 50);
+            this.btnOpenHoSo.TabIndex = 42;
+            this.btnOpenHoSo.Text = "Mở hồ sơ";
+            this.btnOpenHoSo.UseVisualStyleBackColor = true;
+            this.btnOpenHoSo.Click += new System.EventHandler(this.btnOpenHoSo_Click);
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Location = new System.Drawing.Point(137, 284);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDiaChi.Multiline = true;
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(247, 94);
+            this.txtDiaChi.TabIndex = 41;
+            // 
+            // btnLapHoSo
+            // 
+            this.btnLapHoSo.Location = new System.Drawing.Point(126, 727);
+            this.btnLapHoSo.Name = "btnLapHoSo";
+            this.btnLapHoSo.Size = new System.Drawing.Size(176, 50);
+            this.btnLapHoSo.TabIndex = 0;
+            this.btnLapHoSo.Text = "Lập hồ sơ";
+            this.btnLapHoSo.UseVisualStyleBackColor = true;
+            this.btnLapHoSo.Click += new System.EventHandler(this.btnLapHoSo_Click);
+            // 
             // txtLayThongTinTG
             // 
             this.txtLayThongTinTG.Location = new System.Drawing.Point(135, 660);
-            this.txtLayThongTinTG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLayThongTinTG.Margin = new System.Windows.Forms.Padding(4);
             this.txtLayThongTinTG.Name = "txtLayThongTinTG";
             this.txtLayThongTinTG.Size = new System.Drawing.Size(241, 26);
             this.txtLayThongTinTG.TabIndex = 40;
@@ -218,7 +256,7 @@
             // txtLayThongTinSTV
             // 
             this.txtLayThongTinSTV.Location = new System.Drawing.Point(136, 609);
-            this.txtLayThongTinSTV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLayThongTinSTV.Margin = new System.Windows.Forms.Padding(4);
             this.txtLayThongTinSTV.Name = "txtLayThongTinSTV";
             this.txtLayThongTinSTV.Size = new System.Drawing.Size(241, 26);
             this.txtLayThongTinSTV.TabIndex = 38;
@@ -241,7 +279,7 @@
             "Hồ sơ vây",
             "Hồ sơ thẻ"});
             this.cboLayThongTinSPV.Location = new System.Drawing.Point(137, 561);
-            this.cboLayThongTinSPV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboLayThongTinSPV.Margin = new System.Windows.Forms.Padding(4);
             this.cboLayThongTinSPV.Name = "cboLayThongTinSPV";
             this.cboLayThongTinSPV.Size = new System.Drawing.Size(247, 27);
             this.cboLayThongTinSPV.TabIndex = 36;
@@ -273,7 +311,7 @@
             // txtLayThongTinTNBQ
             // 
             this.txtLayThongTinTNBQ.Location = new System.Drawing.Point(137, 446);
-            this.txtLayThongTinTNBQ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLayThongTinTNBQ.Margin = new System.Windows.Forms.Padding(4);
             this.txtLayThongTinTNBQ.Name = "txtLayThongTinTNBQ";
             this.txtLayThongTinTNBQ.Size = new System.Drawing.Size(241, 26);
             this.txtLayThongTinTNBQ.TabIndex = 24;
@@ -292,7 +330,7 @@
             // txtNgheNghiep
             // 
             this.txtNgheNghiep.Location = new System.Drawing.Point(136, 399);
-            this.txtNgheNghiep.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNgheNghiep.Margin = new System.Windows.Forms.Padding(4);
             this.txtNgheNghiep.Name = "txtNgheNghiep";
             this.txtNgheNghiep.Size = new System.Drawing.Size(247, 26);
             this.txtNgheNghiep.TabIndex = 21;
@@ -313,7 +351,7 @@
             this.checkBox_GTNU.AutoSize = true;
             this.checkBox_GTNU.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_GTNU.Location = new System.Drawing.Point(263, 134);
-            this.checkBox_GTNU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox_GTNU.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_GTNU.Name = "checkBox_GTNU";
             this.checkBox_GTNU.Size = new System.Drawing.Size(53, 23);
             this.checkBox_GTNU.TabIndex = 18;
@@ -325,7 +363,7 @@
             this.checkBox_GTNAM.AutoSize = true;
             this.checkBox_GTNAM.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_GTNAM.Location = new System.Drawing.Point(171, 134);
-            this.checkBox_GTNAM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox_GTNAM.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox_GTNAM.Name = "checkBox_GTNAM";
             this.checkBox_GTNAM.Size = new System.Drawing.Size(65, 23);
             this.checkBox_GTNAM.TabIndex = 17;
@@ -357,7 +395,7 @@
             // txtCCCD
             // 
             this.txtCCCD.Location = new System.Drawing.Point(136, 236);
-            this.txtCCCD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCCCD.Margin = new System.Windows.Forms.Padding(4);
             this.txtCCCD.Name = "txtCCCD";
             this.txtCCCD.Size = new System.Drawing.Size(247, 26);
             this.txtCCCD.TabIndex = 12;
@@ -365,7 +403,7 @@
             // txtSODT
             // 
             this.txtSODT.Location = new System.Drawing.Point(136, 180);
-            this.txtSODT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSODT.Margin = new System.Windows.Forms.Padding(4);
             this.txtSODT.Name = "txtSODT";
             this.txtSODT.Size = new System.Drawing.Size(247, 26);
             this.txtSODT.TabIndex = 11;
@@ -373,7 +411,7 @@
             // txtKHACHHANG
             // 
             this.txtKHACHHANG.Location = new System.Drawing.Point(136, 79);
-            this.txtKHACHHANG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtKHACHHANG.Margin = new System.Windows.Forms.Padding(4);
             this.txtKHACHHANG.Name = "txtKHACHHANG";
             this.txtKHACHHANG.Size = new System.Drawing.Size(247, 26);
             this.txtKHACHHANG.TabIndex = 10;
@@ -429,9 +467,9 @@
             this.tabPage_QUANLYHOSADALAP.Controls.Add(this.dataGridView1);
             this.tabPage_QUANLYHOSADALAP.Controls.Add(this.panel1);
             this.tabPage_QUANLYHOSADALAP.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_QUANLYHOSADALAP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_QUANLYHOSADALAP.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_QUANLYHOSADALAP.Name = "tabPage_QUANLYHOSADALAP";
-            this.tabPage_QUANLYHOSADALAP.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_QUANLYHOSADALAP.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage_QUANLYHOSADALAP.Size = new System.Drawing.Size(1265, 876);
             this.tabPage_QUANLYHOSADALAP.TabIndex = 1;
             this.tabPage_QUANLYHOSADALAP.Text = "Quản lý hồ sơ đã lập";
@@ -443,7 +481,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(4, 4);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(873, 868);
@@ -477,7 +515,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(877, 4);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(384, 868);
             this.panel1.TabIndex = 3;
@@ -485,7 +523,7 @@
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(135, 694);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(241, 26);
             this.textBox7.TabIndex = 45;
@@ -504,7 +542,7 @@
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(135, 642);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(241, 26);
             this.textBox6.TabIndex = 43;
@@ -536,7 +574,7 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(135, 473);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(241, 26);
             this.textBox4.TabIndex = 40;
@@ -555,7 +593,7 @@
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(136, 422);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(241, 26);
             this.textBox5.TabIndex = 38;
@@ -575,7 +613,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(136, 367);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(247, 27);
             this.comboBox1.TabIndex = 36;
@@ -609,7 +647,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.Location = new System.Drawing.Point(263, 134);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(53, 23);
             this.checkBox1.TabIndex = 18;
@@ -621,7 +659,7 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox2.Location = new System.Drawing.Point(171, 134);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(65, 23);
             this.checkBox2.TabIndex = 17;
@@ -642,7 +680,7 @@
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(136, 236);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(247, 26);
             this.textBox9.TabIndex = 12;
@@ -650,7 +688,7 @@
             // textBox10
             // 
             this.textBox10.Location = new System.Drawing.Point(136, 180);
-            this.textBox10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(247, 26);
             this.textBox10.TabIndex = 11;
@@ -658,7 +696,7 @@
             // textBox11
             // 
             this.textBox11.Location = new System.Drawing.Point(136, 79);
-            this.textBox11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(247, 26);
             this.textBox11.TabIndex = 10;
@@ -714,9 +752,9 @@
             this.tabPage_TIENTRINH.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.tabPage_TIENTRINH.Controls.Add(this.tabControl_TIENTRINH);
             this.tabPage_TIENTRINH.Location = new System.Drawing.Point(4, 25);
-            this.tabPage_TIENTRINH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_TIENTRINH.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage_TIENTRINH.Name = "tabPage_TIENTRINH";
-            this.tabPage_TIENTRINH.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage_TIENTRINH.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage_TIENTRINH.Size = new System.Drawing.Size(1265, 876);
             this.tabPage_TIENTRINH.TabIndex = 2;
             this.tabPage_TIENTRINH.Text = "Tiến trình";
@@ -727,7 +765,7 @@
             this.tabControl_TIENTRINH.Controls.Add(this.tabPage2);
             this.tabControl_TIENTRINH.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl_TIENTRINH.Location = new System.Drawing.Point(4, 4);
-            this.tabControl_TIENTRINH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl_TIENTRINH.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl_TIENTRINH.Name = "tabControl_TIENTRINH";
             this.tabControl_TIENTRINH.SelectedIndex = 0;
             this.tabControl_TIENTRINH.Size = new System.Drawing.Size(1257, 868);
@@ -739,9 +777,9 @@
             this.tabPage1.Controls.Add(this.panel4);
             this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(1249, 839);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Đang xác minh";
@@ -751,7 +789,7 @@
             this.panel4.Controls.Add(this.dataGridView4);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(4, 94);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1241, 741);
             this.panel4.TabIndex = 1;
@@ -762,7 +800,7 @@
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView4.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView4.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.RowHeadersWidth = 51;
             this.dataGridView4.Size = new System.Drawing.Size(1241, 741);
@@ -785,7 +823,7 @@
             this.panel2.Controls.Add(this.textBox8);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(4, 4);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1241, 90);
             this.panel2.TabIndex = 0;
@@ -805,7 +843,7 @@
             // 
             this.textBox21.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox21.Location = new System.Drawing.Point(110, 52);
-            this.textBox21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox21.Margin = new System.Windows.Forms.Padding(4);
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(249, 22);
             this.textBox21.TabIndex = 11;
@@ -825,7 +863,7 @@
             // 
             this.textBox14.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox14.Location = new System.Drawing.Point(873, 48);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(4);
             this.textBox14.Name = "textBox14";
             this.textBox14.Size = new System.Drawing.Size(249, 22);
             this.textBox14.TabIndex = 9;
@@ -834,7 +872,7 @@
             // 
             this.textBox15.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox15.Location = new System.Drawing.Point(503, 48);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(4);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(249, 22);
             this.textBox15.TabIndex = 8;
@@ -865,7 +903,7 @@
             // 
             this.textBox13.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox13.Location = new System.Drawing.Point(873, 16);
-            this.textBox13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox13.Margin = new System.Windows.Forms.Padding(4);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(249, 22);
             this.textBox13.TabIndex = 5;
@@ -874,7 +912,7 @@
             // 
             this.textBox12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox12.Location = new System.Drawing.Point(503, 16);
-            this.textBox12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(249, 22);
             this.textBox12.TabIndex = 4;
@@ -905,7 +943,7 @@
             // 
             this.textBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox8.Location = new System.Drawing.Point(110, 16);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(249, 22);
             this.textBox8.TabIndex = 1;
@@ -916,10 +954,10 @@
             this.tabPage2.Controls.Add(this.panel5);
             this.tabPage2.Controls.Add(this.panel3);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tabPage2.Size = new System.Drawing.Size(1247, 836);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Size = new System.Drawing.Size(1249, 839);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Đã hoàn tất";
             // 
@@ -928,9 +966,9 @@
             this.panel5.Controls.Add(this.dataGridView3);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(4, 94);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1239, 738);
+            this.panel5.Size = new System.Drawing.Size(1241, 741);
             this.panel5.TabIndex = 2;
             // 
             // dataGridView3
@@ -939,10 +977,10 @@
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView3.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.Size = new System.Drawing.Size(1239, 738);
+            this.dataGridView3.Size = new System.Drawing.Size(1241, 741);
             this.dataGridView3.TabIndex = 0;
             // 
             // panel3
@@ -962,16 +1000,16 @@
             this.panel3.Controls.Add(this.textBox20);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(4, 4);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1239, 90);
+            this.panel3.Size = new System.Drawing.Size(1241, 90);
             this.panel3.TabIndex = 1;
             // 
             // label29
             // 
             this.label29.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(24, 52);
+            this.label29.Location = new System.Drawing.Point(25, 52);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(63, 17);
@@ -981,8 +1019,8 @@
             // textBox22
             // 
             this.textBox22.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox22.Location = new System.Drawing.Point(109, 48);
-            this.textBox22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox22.Location = new System.Drawing.Point(110, 48);
+            this.textBox22.Margin = new System.Windows.Forms.Padding(4);
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(249, 22);
             this.textBox22.TabIndex = 11;
@@ -991,7 +1029,7 @@
             // 
             this.label23.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(784, 52);
+            this.label23.Location = new System.Drawing.Point(785, 52);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(50, 17);
@@ -1001,8 +1039,8 @@
             // textBox16
             // 
             this.textBox16.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox16.Location = new System.Drawing.Point(872, 48);
-            this.textBox16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox16.Location = new System.Drawing.Point(873, 48);
+            this.textBox16.Margin = new System.Windows.Forms.Padding(4);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(249, 22);
             this.textBox16.TabIndex = 9;
@@ -1010,8 +1048,8 @@
             // textBox17
             // 
             this.textBox17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox17.Location = new System.Drawing.Point(502, 48);
-            this.textBox17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox17.Location = new System.Drawing.Point(503, 48);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(4);
             this.textBox17.Name = "textBox17";
             this.textBox17.Size = new System.Drawing.Size(249, 22);
             this.textBox17.TabIndex = 8;
@@ -1020,7 +1058,7 @@
             // 
             this.label24.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(408, 52);
+            this.label24.Location = new System.Drawing.Point(409, 52);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(50, 17);
@@ -1031,7 +1069,7 @@
             // 
             this.label25.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(784, 20);
+            this.label25.Location = new System.Drawing.Point(785, 20);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(72, 17);
@@ -1041,8 +1079,8 @@
             // textBox18
             // 
             this.textBox18.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox18.Location = new System.Drawing.Point(872, 16);
-            this.textBox18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox18.Location = new System.Drawing.Point(873, 16);
+            this.textBox18.Margin = new System.Windows.Forms.Padding(4);
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(249, 22);
             this.textBox18.TabIndex = 5;
@@ -1050,8 +1088,8 @@
             // textBox19
             // 
             this.textBox19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox19.Location = new System.Drawing.Point(502, 16);
-            this.textBox19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox19.Location = new System.Drawing.Point(503, 16);
+            this.textBox19.Margin = new System.Windows.Forms.Padding(4);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(249, 22);
             this.textBox19.TabIndex = 4;
@@ -1060,7 +1098,7 @@
             // 
             this.label26.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(408, 20);
+            this.label26.Location = new System.Drawing.Point(409, 20);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(84, 17);
@@ -1071,7 +1109,7 @@
             // 
             this.label27.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(24, 20);
+            this.label27.Location = new System.Drawing.Point(25, 20);
             this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(64, 17);
@@ -1081,49 +1119,11 @@
             // textBox20
             // 
             this.textBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox20.Location = new System.Drawing.Point(109, 16);
-            this.textBox20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox20.Location = new System.Drawing.Point(110, 16);
+            this.textBox20.Margin = new System.Windows.Forms.Padding(4);
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(249, 22);
             this.textBox20.TabIndex = 1;
-            // 
-            // btnLapHoSo
-            // 
-            this.btnLapHoSo.Location = new System.Drawing.Point(126, 727);
-            this.btnLapHoSo.Name = "btnLapHoSo";
-            this.btnLapHoSo.Size = new System.Drawing.Size(176, 50);
-            this.btnLapHoSo.TabIndex = 0;
-            this.btnLapHoSo.Text = "Lập hồ sơ";
-            this.btnLapHoSo.UseVisualStyleBackColor = true;
-            this.btnLapHoSo.Click += new System.EventHandler(this.btnLapHoSo_Click);
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Location = new System.Drawing.Point(137, 284);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDiaChi.Multiline = true;
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(247, 94);
-            this.txtDiaChi.TabIndex = 41;
-            // 
-            // btnOpenHoSo
-            // 
-            this.btnOpenHoSo.Location = new System.Drawing.Point(126, 783);
-            this.btnOpenHoSo.Name = "btnOpenHoSo";
-            this.btnOpenHoSo.Size = new System.Drawing.Size(176, 50);
-            this.btnOpenHoSo.TabIndex = 42;
-            this.btnOpenHoSo.Text = "Mở hồ sơ";
-            this.btnOpenHoSo.UseVisualStyleBackColor = true;
-            this.btnOpenHoSo.Click += new System.EventHandler(this.btnOpenHoSo_Click);
-            // 
-            // openWord
-            // 
-            this.openWord.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.openWord.Location = new System.Drawing.Point(4, 4);
-            this.openWord.Name = "openWord";
-            this.openWord.Size = new System.Drawing.Size(873, 868);
-            this.openWord.TabIndex = 3;
-            this.openWord.Text = "";
             // 
             // frmLayThongTin
             // 
@@ -1132,7 +1132,7 @@
             this.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.ClientSize = new System.Drawing.Size(1273, 905);
             this.Controls.Add(this.tabControl_LAYTHONGTIN);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLayThongTin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LAYTHONGTIN";

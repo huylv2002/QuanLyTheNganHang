@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmPhongQuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhongQuanLy.designer.cs">
+      <DependentUpon>frmPhongQuanLy.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiaiNgan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,12 +79,6 @@
     </Compile>
     <Compile Include="LayThongTin.designer.cs">
       <DependentUpon>LayThongTin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PhongQL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PhongQL.Designer.cs">
-      <DependentUpon>PhongQL.cs</DependentUpon>
     </Compile>
     <Compile Include="ThongTinTaiKhoan.cs">
       <SubType>Form</SubType>
@@ -117,6 +117,9 @@
     <Compile Include="The.designer.cs">
       <DependentUpon>The.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmPhongQuanLy.resx">
+      <DependentUpon>frmPhongQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GiaiNgan.resx">
       <DependentUpon>GiaiNgan.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,9 +128,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LayThongTin.resx">
       <DependentUpon>LayThongTin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PhongQL.resx">
-      <DependentUpon>PhongQL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThongTinTaiKhoan.resx">
       <DependentUpon>ThongTinTaiKhoan.cs</DependentUpon>

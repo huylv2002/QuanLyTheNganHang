@@ -186,7 +186,7 @@ namespace GiaoDien
 
             private void ToolStripMenuItem_TTKH_Click(object sender, EventArgs e)
             {
-                frmPhongQL myForm = new frmPhongQL();
+                frmPhongQL1 myForm = new frmPhongQL1();
                 myForm.TopLevel = false;
                 myForm.AutoScroll = true;
             this.panelWC.Controls.Clear();
@@ -199,7 +199,7 @@ namespace GiaoDien
             }
             private void ToolStripMenuItem_TTNV_Click(object sender, EventArgs e)
             {
-                frmPhongQL myForm = new frmPhongQL();
+                frmPhongQL1 myForm = new frmPhongQL1();
                 myForm.TopLevel = false;
                 myForm.AutoScroll = true;
             this.panelWC.Controls.Clear();

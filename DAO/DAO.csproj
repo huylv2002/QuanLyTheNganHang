@@ -178,8 +178,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dao_KhachHang.cs" />
+    <Compile Include="dao_NhanVien.cs" />
     <Compile Include="dao_the_khachang\dao_the_mothe.cs" />
     <Compile Include="dao_the_khachang\dao_thongtinthe_khachhang.cs" />
+    <Compile Include="DataProvider.cs" />
     <Compile Include="ketNoi\SqlConnection\ConnectionString.cs" />
     <Compile Include="NhanVien\dao_Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

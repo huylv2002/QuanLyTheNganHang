@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dto_KhachHang.cs" />
+    <Compile Include="dto_NhanVien.cs" />
     <Compile Include="dto_the_khachhang\dto_the_KhachHang.cs" />
     <Compile Include="dto_the_khachhang\dto_the_taikhoankh.cs" />
     <Compile Include="dto_the_khachhang\dto_thongtinthe.cs" />
