@@ -1,0 +1,23 @@
+Để chạy được chương trình ở Folder theeo đường dẫn  :..\QuanLyNganHang\DAO
+:..\QuanLyNganHang\GiaoDien
+
+Bước 1: mở file :..\QuanLyNganHang\GiaoDien\GiaoDien.Config và :..\QuanLyNganHang\DAO\DAO.config
+Bước 2: mở folder :..\QuanLyNganHang\Data->Database và chạy file có đuôi .sql
+bước 3: cập nhậ User databse ở phần connection thay thế ADHYUNA bằng tên user sever của máy
+bước 4: Save và chạy file GiaoDien.exe để trải nghiệm phần mềm.
+
+Phong giao dịch
+NV: bs123@bank.com                TT0508
+TP: bs126@bank.com                HH2205    
+
+Phòng KD
+
+TP: bs124@bank.com                TH2303    
+NV: bs543@bank.com                TD1206    
+
+Phòng PPL
+
+TP: bs304@bank.com                HA1201    
+NV: bs390@bank.com                TD2510
+  
+để đăng nhập vào sử dụng các tài khoảng trên để thử nghiệm
